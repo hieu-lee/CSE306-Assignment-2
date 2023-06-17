@@ -90,17 +90,6 @@ Vector normalization(const Vector &a)
     return a / norm(a);
 }
 
-void print(Vector &a)
-{
-    std::cout << "[" << a[0] << ", " << a[1] << "]";
-}
-
-std::ostream &operator<<(std::ostream &os, const Vector &a)
-{
-    os << "[" << a[0] << ", " << a[1] << "]";
-    return os;
-}
-
 Vector intersect(Vector A, Vector B, std::pair<Vector, Vector> line)
 {
     // returns the point of intersection between the Edge [A,B] and line (u,v)

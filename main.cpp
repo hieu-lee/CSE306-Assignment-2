@@ -11,7 +11,7 @@ double generate()
     return my_distribution(my_random_engine);
 }
 
-void generate_vor()
+void generate_diagram()
 {
     const int n_points = 500;
     std::vector<Vector> my_points(n_points);
@@ -70,5 +70,6 @@ void generate_fluid()
 
 int main(int argc, char **argv)
 {
+    // generate_diagram();
     generate_fluid();
 }
